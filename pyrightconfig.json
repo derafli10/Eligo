@@ -1,0 +1,20 @@
+{
+  "venvPath": ".",
+  "venv": ".venv",
+  "pythonVersion": "3.14",
+  "pythonPlatform": "Windows",
+  "include": [
+    "eligo",
+    "generator",
+    "tests",
+    "main.py"
+  ],
+  "extraPaths": [
+    ".venv/Lib/site-packages",
+    "."
+  ],
+  "reportMissingImports": "none",
+  "reportMissingModuleSource": "none",
+  "reportMissingTypeStubs": "none",
+  "typeCheckingMode": "off"
+}

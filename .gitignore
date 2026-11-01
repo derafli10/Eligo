@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caching tools linting & static testing
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Berkas data sementara, impor, dan ekspor lokal (REQ-13, C5)
+data/import/
+*.tmp
+*.bak
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
