@@ -99,10 +99,10 @@ def add_student(
         ValidationError: Jika salah satu aturan validasi atau batasan bisnis dilanggar.
     """
     # 1. Normalisasi teks
-    norm_name = normalize_name(name)
+    norm_name = normalize_name(name)   # untuk merapikan nama supaya huruf kapital
     validate_name_nonempty(norm_name)
 
-    norm_class = normalize_class_name(class_name)
+    norm_class = normalize_class_name(class_name)   #untuk merapikan nama kelas 
     if not norm_class:
         raise ValidationError(
             message="Nama kelas siswa tidak boleh kosong.",
@@ -124,7 +124,7 @@ def add_student(
         resolved_tka = maybe_tka
 
     # 4. Validasi nilai rapor 5 semester
-    if len(grades) != 5:
+    if len(grades) != 5:   #untuk memper jelas bahwa jumlah nilai harus tepat 5/persemester
         raise ValidationError(
             message=f"Nilai rapor harus memuat tepat 5 semester, ditemukan: {len(grades)} semester.",
             code=ErrorCode.GRADE_EMPTY,
@@ -140,7 +140,7 @@ def add_student(
         validated_semesters.append(clean_sem_grades)
 
     # 5. Validasi batas maksimal 5 prestasi
-    if len(achievements) > 5:
+    if len(achievements) > 5: #satu siswa hanya boleh mencantumkan 5 prestasi nya
         raise ValidationError(
             message=f"Maksimal 5 prestasi per siswa, ditemukan: {len(achievements)}.",
             code=ErrorCode.ACHIEVEMENT_LIMIT,
@@ -178,8 +178,8 @@ def add_student(
 
 def update_student(
     student: Student,
-    school_profile: SchoolProfile,
-    repo: StudentRepository,
+    school_profile: SchoolProfile, #untuk memerikasa jurusan nya
+    repo: StudentRepository, # akses untuk penyimpanan data nya
 ) -> Student:
     """Memperbarui informasi atau nilai rapor siswa yang sudah terdaftar.
 
@@ -207,11 +207,12 @@ def update_student(
             code=ErrorCode.FILE_NOT_FOUND,
         )
 
-    # Validasi jurusan
+    # Validasi jurusan yang kode nya belum terdaftar
     majors_dict = {m.code.upper(): m for m in school_profile.majors}
     validate_major_exists(student.major_code, majors_dict)
 
-    # Validasi nilai rapor 5 semester
+    # Validasi nilai rapor  setiap nilai di recap
+    #untuk memmastikan engg ada nilai yang salah
     for sem_dict in student.grades:
         for val in sem_dict.values():
             validate_grade(val)
@@ -221,7 +222,7 @@ def update_student(
     repo.save_all(updated_list)
     return student
 
-
+#ini untuk menghapus siswa
 def delete_student(student_id: str, repo: StudentRepository) -> bool:
     """Menghapus siswa dari basis data sekolah berdasarkan ID-nya.
 
@@ -238,6 +239,6 @@ def delete_student(student_id: str, repo: StudentRepository) -> bool:
 
     if len(filtered) == len(current_students):
         return False  # Tidak ada siswa yang cocok
-
+# jadi kalo ada yang terhapus simpan datr baru tanpa data siswa yang di hapus
     repo.save_all(filtered)
     return True
