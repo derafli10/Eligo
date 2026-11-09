@@ -1,4 +1,7 @@
 # Dependensi Produksi Sistem Pemeringkatan Siswa Eligible SNBP (Eligo)
 # Memenuhi batasan C1 (hanya rich diizinkan dari pustaka pihak ketiga) & C2 (testing otomatis)
 rich>=13.0.0
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dev
