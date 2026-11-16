@@ -11,7 +11,8 @@ from eligo.domain.models import AppConfig, Major, Student
 from eligo.domain.repositories import StudentRepository
 from eligo.infrastructure.csv_parser import ParsedStudentRow, parse_student_csv
 
-
+# frozen=True membuat objek IMMUTABLE: setelah dibuat, atributnya tidak bisa diubah.
+# Ini aman karena pratinjau hanyalah "foto" hasil pembacaan, bukan data yang diedit.
 @dataclass(frozen=True)
 class ImportPreview:
     """Objek Pratinjau Hasil Pembacaan Berkas CSV sebelum Disimpan ke Basis Data.
@@ -29,9 +30,9 @@ class ImportPreview:
         total_rows: Total keseluruhan baris data yang diproses dari berkas CSV.
     """
 
-    valid_rows: list[ParsedStudentRow]
-    error_rows: list[RowError]
-    duplicate_rows: list[ParsedStudentRow]
+    valid_rows: list[ParsedStudentRow] # baris yang lolos validasi
+    error_rows: list[RowError] # baris bermasalah beserta detail kesalahannya
+    duplicate_rows: list[ParsedStudentRow]  # baris valid yang ternyata sudah terdaftar
     tka_count: int
     non_tka_count: int
     total_rows: int
@@ -58,11 +59,11 @@ class ImportPreview:
 
 
 def prepare_import_preview(
-    file_path: Path | str,
+    file_path: Path | str,  # lokasi berkas, boleh objek Path atau string biasa
     major: Major,
     existing_students: list[Student],
     config: AppConfig,
-) -> ImportPreview:
+) -> ImportPreview: # fungsi ini mengembalikan objek ImportPreview
     """Fase 1 Impor: Membaca berkas CSV dan menyiapkan pratinjau data tanpa menulis ke disk.
 
     Fungsi ini membaca file CSV, memvalidasi setiap baris nilai rapor terhadap kurikulum
@@ -275,7 +276,7 @@ def commit_import(
             # Gagal menulis laporan log tidak boleh membatalkan commit data yang sudah sah
             pass
 
-    saved_count = len(final_students_list)
-    error_count = len(preview.error_rows)
-
+    saved_count = len(final_students_list) # total siswa tersimpan (lama + baru)
+    error_count = len(preview.error_rows) # jumlah baris CSV yang gagal
+    # Mengembalikan dua nilai sekaligus dalam bentuk tuple
     return saved_count, error_count
