@@ -27,6 +27,9 @@ def get_tka_synonyms(repo: ConfigRepository) -> dict[str, str]:
     Returns:
         Kamus pemetaan kata mentah ke nilai standar (misal {"ya": "IKUT", "ikut": "IKUT"}).
     """
+    # Muat seluruh konfigurasi dan simpan di variabel lokal "config"
+ # Ambil atribut tka_synonyms saja. Gunanya: CSV bisa berisi "ya", "ikut", "Ya", dll.,
+ # dan kamus ini menyeragamkan semuanya menjadi satu nilai baku, mis. "IKUT".
     config = repo.load()
     return config.tka_synonyms
 
