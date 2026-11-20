@@ -1,0 +1,445 @@
+{
+  "schema_version": 1,
+  "last_updated": "2026-11-20T15:10:01.779107+00:00",
+  "data": {
+    "name": "SMK Negeri 1 Cikarang Selatan",
+    "school_type": "SMK",
+    "accreditation": "A",
+    "e_rapor_active": false,
+    "achievement_enabled": true,
+    "majors": [
+      {
+        "code": "TKJ",
+        "name": "Teknik Komputer dan Jaringan",
+        "subjects": [
+          [
+            {
+              "code": "MTK",
+              "name": "Matematika"
+            },
+            {
+              "code": "BIN",
+              "name": "Bahasa Indonesia"
+            },
+            {
+              "code": "ENG",
+              "name": "Bahasa Inggris"
+            },
+            {
+              "code": "DJK",
+              "name": "Daras Jaringan Komputer"
+            },
+            {
+              "code": "SJR",
+              "name": "Sejarah"
+            },
+            {
+              "code": "INFORMATIKA",
+              "name": "informatika"
+            },
+            {
+              "code": "JPG",
+              "name": "Bahasa Jepang"
+            },
+            {
+              "code": "IPAS",
+              "name": "Ilmu Pengetahuan Alam dan Sosial"
+            },
+            {
+              "code": "PJOK",
+              "name": "Pendidikan Jasmani Olahraga dan Kesehatan"
+            },
+            {
+              "code": "PAI",
+              "name": "Pendidikan Agama Islam"
+            }
+          ],
+          [
+            {
+              "code": "MTK",
+              "name": "Matematika"
+            },
+            {
+              "code": "BIN",
+              "name": "Bahasa Indonesia"
+            },
+            {
+              "code": "ENG",
+              "name": "Bahasa Inggris"
+            },
+            {
+              "code": "DJK",
+              "name": "Daras Jaringan Komputer"
+            },
+            {
+              "code": "SJR",
+              "name": "Sejarah"
+            },
+            {
+              "code": "INFORMATIKA",
+              "name": "informatika"
+            },
+            {
+              "code": "JPG",
+              "name": "Bahasa Jepang"
+            },
+            {
+              "code": "IPAS",
+              "name": "Ilmu Pengetahuan Alam dan Sosial"
+            },
+            {
+              "code": "PJOK",
+              "name": "Pendidikan Jasmani Olahraga dan Kesehatan"
+            },
+            {
+              "code": "PAI",
+              "name": "Pendidikan Agama Islam"
+            }
+          ],
+          [
+            {
+              "code": "MTK",
+              "name": "Matematika"
+            },
+            {
+              "code": "BIN",
+              "name": "Bahasa Indonesia"
+            },
+            {
+              "code": "ENG",
+              "name": "Bahasa Inggris"
+            },
+            {
+              "code": "PJOK",
+              "name": "Pendidikan Jasmani Olahraga dan Kesehatan"
+            },
+            {
+              "code": "PAI",
+              "name": "Pendidikan Agama Islam"
+            },
+            {
+              "code": "TJKN",
+              "name": "Telekomunikasi Jaringan Kabel dan Nirkabel"
+            },
+            {
+              "code": "AIJ",
+              "name": "Administrasi Infrastruktur Jaringan"
+            },
+            {
+              "code": "ASJ",
+              "name": "Administrasi Sistem Jaringan"
+            },
+            {
+              "code": "PLH",
+              "name": "Pendidikan Lingkungan Hidup"
+            },
+            {
+              "code": "WEB",
+              "name": "Teknologi Website"
+            }
+          ],
+          [
+            {
+              "code": "MTK",
+              "name": "Matematika"
+            },
+            {
+              "code": "BIN",
+              "name": "Bahasa Indonesia"
+            },
+            {
+              "code": "ENG",
+              "name": "Bahasa Inggris"
+            },
+            {
+              "code": "PJOK",
+              "name": "Pendidikan Jasmani Olahraga dan Kesehatan"
+            },
+            {
+              "code": "PAI",
+              "name": "Pendidikan Agama Islam"
+            },
+            {
+              "code": "TJKN",
+              "name": "Telekomunikasi Jaringan Kabel dan Nirkabel"
+            },
+            {
+              "code": "AIJ",
+              "name": "Administrasi Infrastruktur Jaringan"
+            },
+            {
+              "code": "ASJ",
+              "name": "Administrasi Sistem Jaringan"
+            },
+            {
+              "code": "PLH",
+              "name": "Pendidikan Lingkungan Hidup"
+            },
+            {
+              "code": "WEB",
+              "name": "Teknologi Website"
+            }
+          ],
+          [
+            {
+              "code": "MTK",
+              "name": "Matematika"
+            },
+            {
+              "code": "BIN",
+              "name": "Bahasa Indonesia"
+            },
+            {
+              "code": "ENG",
+              "name": "Bahasa Inggris"
+            },
+            {
+              "code": "PJOK",
+              "name": "Pendidikan Jasmani Olahraga dan Kesehatan"
+            },
+            {
+              "code": "PAI",
+              "name": "Pendidikan Agama Islam"
+            },
+            {
+              "code": "TJKN",
+              "name": "Telekomunikasi Jaringan Kabel dan Nirkabel"
+            },
+            {
+              "code": "AIJ",
+              "name": "Administrasi Infrastruktur Jaringan"
+            },
+            {
+              "code": "ASJ",
+              "name": "Administrasi Sistem Jaringan"
+            },
+            {
+              "code": "PLH",
+              "name": "Pendidikan Lingkungan Hidup"
+            },
+            {
+              "code": "WEB",
+              "name": "Teknologi Website"
+            }
+          ]
+        ]
+      },
+      {
+        "code": "TEI",
+        "name": "Teknik Elektronika Industri",
+        "subjects": [
+          [
+            {
+              "code": "MTK",
+              "name": "Matematika"
+            },
+            {
+              "code": "BIN",
+              "name": "Bahasa Indonesia"
+            },
+            {
+              "code": "ENG",
+              "name": "Bahasa Inggris"
+            },
+            {
+              "code": "PAI",
+              "name": "Pendidikan Agama Islam"
+            },
+            {
+              "code": "PJOK",
+              "name": "Pendidikan Jasmani Olahraga dan Kesehatan"
+            },
+            {
+              "code": "JPG",
+              "name": "Bahasa Jepang"
+            },
+            {
+              "code": "DE",
+              "name": "Dasar Elektronika"
+            },
+            {
+              "code": "INF",
+              "name": "Informatika"
+            },
+            {
+              "code": "IPAS",
+              "name": "Ilmu Pengetahuan Alam dan Sosial"
+            },
+            {
+              "code": "SJR",
+              "name": "Sejarah"
+            }
+          ],
+          [
+            {
+              "code": "MTK",
+              "name": "Matematika"
+            },
+            {
+              "code": "BIN",
+              "name": "Bahasa Indonesia"
+            },
+            {
+              "code": "ENG",
+              "name": "Bahasa Inggris"
+            },
+            {
+              "code": "PAI",
+              "name": "Pendidikan Agama Islam"
+            },
+            {
+              "code": "PJOK",
+              "name": "Pendidikan Jasmani Olahraga dan Kesehatan"
+            },
+            {
+              "code": "JPG",
+              "name": "Bahasa Jepang"
+            },
+            {
+              "code": "DE",
+              "name": "Dasar Elektronika"
+            },
+            {
+              "code": "INF",
+              "name": "Informatika"
+            },
+            {
+              "code": "IPAS",
+              "name": "Ilmu Pengetahuan Alam dan Sosial"
+            },
+            {
+              "code": "SJR",
+              "name": "Sejarah"
+            }
+          ],
+          [
+            {
+              "code": "MTK",
+              "name": "Matematika"
+            },
+            {
+              "code": "BIN",
+              "name": "Bahasa Indonesia"
+            },
+            {
+              "code": "ENG",
+              "name": "Bahasa Inggris"
+            },
+            {
+              "code": "PAI",
+              "name": "Pendidikan Agama Islam"
+            },
+            {
+              "code": "PJOK",
+              "name": "Pendidikan Jasmani Olahraga dan Kesehatan"
+            },
+            {
+              "code": "JPG",
+              "name": "Bahasa Jepang"
+            },
+            {
+              "code": "DE",
+              "name": "Dasar Elektronika"
+            },
+            {
+              "code": "INF",
+              "name": "Informatika"
+            },
+            {
+              "code": "IPAS",
+              "name": "Ilmu Pengetahuan Alam dan Sosial"
+            },
+            {
+              "code": "SJR",
+              "name": "Sejarah"
+            }
+          ],
+          [
+            {
+              "code": "MTK",
+              "name": "Matematika"
+            },
+            {
+              "code": "BIN",
+              "name": "Bahasa Indonesia"
+            },
+            {
+              "code": "ENG",
+              "name": "Bahasa Inggris"
+            },
+            {
+              "code": "PAI",
+              "name": "Pendidikan Agama Islam"
+            },
+            {
+              "code": "PJOK",
+              "name": "Pendidikan Jasmani Olahraga dan Kesehatan"
+            },
+            {
+              "code": "JPG",
+              "name": "Bahasa Jepang"
+            },
+            {
+              "code": "DE",
+              "name": "Dasar Elektronika"
+            },
+            {
+              "code": "INF",
+              "name": "Informatika"
+            },
+            {
+              "code": "IPAS",
+              "name": "Ilmu Pengetahuan Alam dan Sosial"
+            },
+            {
+              "code": "SJR",
+              "name": "Sejarah"
+            }
+          ],
+          [
+            {
+              "code": "MTK",
+              "name": "Matematika"
+            },
+            {
+              "code": "BIN",
+              "name": "Bahasa Indonesia"
+            },
+            {
+              "code": "ENG",
+              "name": "Bahasa Inggris"
+            },
+            {
+              "code": "PAI",
+              "name": "Pendidikan Agama Islam"
+            },
+            {
+              "code": "PJOK",
+              "name": "Pendidikan Jasmani Olahraga dan Kesehatan"
+            },
+            {
+              "code": "JPG",
+              "name": "Bahasa Jepang"
+            },
+            {
+              "code": "DE",
+              "name": "Dasar Elektronika"
+            },
+            {
+              "code": "INF",
+              "name": "Informatika"
+            },
+            {
+              "code": "IPAS",
+              "name": "Ilmu Pengetahuan Alam dan Sosial"
+            },
+            {
+              "code": "SJR",
+              "name": "Sejarah"
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}
